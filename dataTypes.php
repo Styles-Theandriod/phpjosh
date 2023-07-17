@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-<form name="evl" method="$_POST">
-       <label fo="">Nme</label>
-        <input type="text" name="screen">
-        <input type="submit" value="submit">
-    </form>
     <?php
         $speed = 3.42;
         var_dump($speed);
@@ -201,14 +187,46 @@
         }
 
 
-        $x = 1;
+    //     $x = 1;
 
-      do {
-        echo "The number is: $x <br>";
-        $x++;
-      }while ($x <= 5);
+    //   do {
+    //     echo "The number is: $x <br>";
+    //     $x++;
+    //   }while ($x <= 5);
+
+    $items = 20;
+    for($x = 0; $x <= $items; $x++){
+        if($x == 9){
+            // break;
+            continue;
+        }
+      echo 'value is '. $x . '<br/>';
+    }
+
+    $location = array('lugbe', 'Abuja', "london", 'Kaduna');
+
+    // $Person = array("peter"=>35, "Emma"=>23);
+
+    $result = '';
+    
+    foreach($location as $locate){
+        echo $locate . '<br>';
+    }
+
+
+    // function Greet(string $fname, string $lastName){
+    //     echo("<h1>Hello $fname $lastName</h1>" );
+    // }
+
+    // Greet('Emmanuel', 'Chukwunna');
+
+    $Arrayss = [2, 2, 3, 4, 5];
+    echo $Arrayss[0];
+
+
+    // include and require in PhP 
+    
+   
     ?>
 
     
-</body>
-</html>
